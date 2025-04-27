@@ -1,0 +1,148 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Arsenal';
+	font-size: 16px;
+    background-color: #eeeeee;
+    color: rgb(61, 59, 59)ee;
+    overflow-x: hidden;
+}
+
+h1{
+	padding: 0;
+	margin: 0;
+	font: 'Arsenal';
+	font-size: 64px;
+	font-weight: 100;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Arsenal', sans-serif; /* Важно добавить 'sans-serif' для fallback */
+    font-size: 32px;
+    text-align: center; /* Добавляем это для центрирования текста */
+  }
+
+h6 {
+	padding: 0;
+	margin: 0;
+	font: 'Montserrat';
+	font-size: 16px;
+	font-weight: 100;
+}
+
+p{
+	font: 'Montserrat';
+	font-size: 20px;
+	padding: 8px;
+	margin: 8px;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;  
+}
+
+.logo-image {
+    width: 120px; /* Размер логотипа */
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 80px;
+    margin-top: 48px;
+}
+
+.menu{
+	display: flex;
+	column-gap: 40px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+	column-gap: 40px;
+
+	font-size: 15px;
+	font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+    color: #222121;
+	font: 'Montserrat';
+	font-size: 20px;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+
+.footer {
+	display: flex;
+	margin-top: 96px;
+}
+
+.container__footer{
+	width: 100%;/*РЅР° РІСЃСЋ С€РёСЂРёРЅСѓ*/
+    padding: 20px 50px;/*РїРѕР»СЏ РґР»СЏ РєРѕРЅС‚РµРЅС‚Р°*/
+    background: #0f0f0f;/*С†РІРµС‚ С„СѓС‚РµСЂР°*/
+    display: flex;
+    justify-content: center;/*РІ С†РµРЅС‚СЂРµ РїРѕ РіРѕСЂРёР·РѕРЅС‚Р°Р»Рё*/
+    align-items: center;/*РІ С†РµРЅС‚СЂРµ РїРѕ РІРµСЂС‚РёРєР°Р»Рё*/
+	color: #eeeeee;
+	text-align: center;
+}
+/* Стили для статьи */
+.article {
+    margin: 60px auto;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.article h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.article-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    color: #666;
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+
+.article-image {
+    max-width: 70%; /* Уменьшили изображение до 70% от оригинального размера */
+    height: auto;
+    border-radius: 4px;
+    margin: 0 auto; /* Центрирование изображения */
+}
+
+.article-content h2 {
+    font-size: 28px;
+    margin: 30px 0 15px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.article-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.conclusion {
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 30px !important;
+}

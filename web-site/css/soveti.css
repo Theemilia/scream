@@ -1,0 +1,155 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Arsenal';
+	font-size: 16px;
+    background-color: #eeeeee;
+    color: rgb(61, 59, 59)ee;
+    overflow-x: hidden;
+}
+
+h1{
+	padding: 0;
+	margin: 0;
+	font: 'Arsenal';
+	font-size: 64px;
+	font-weight: 100;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Arsenal', sans-serif; /* Важно добавить 'sans-serif' для fallback */
+    font-size: 32px;
+    text-align: center; /* Добавляем это для центрирования текста */
+  }
+
+h6 {
+	padding: 0;
+	margin: 0;
+	font: 'Montserrat';
+	font-size: 16px;
+	font-weight: 100;
+}
+
+p{
+	font: 'Montserrat';
+	font-size: 20px;
+	padding: 8px;
+	margin: 8px;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;  
+}
+
+.logo-image {
+    width: 120px; /* Размер логотипа */
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 80px;
+    margin-top: 48px;
+}
+
+.menu{
+	display: flex;
+	column-gap: 40px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+	column-gap: 40px;
+
+	font-size: 15px;
+	font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+    color: #222121;
+	font: 'Montserrat';
+	font-size: 20px;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+
+.footer {
+	display: flex;
+	margin-top: 96px;
+}
+
+.container__footer{
+	width: 100%;/*РЅР° РІСЃСЋ С€РёСЂРёРЅСѓ*/
+    padding: 20px 50px;/*РїРѕР»СЏ РґР»СЏ РєРѕРЅС‚РµРЅС‚Р°*/
+    background: #0f0f0f;/*С†РІРµС‚ С„СѓС‚РµСЂР°*/
+    display: flex;
+    justify-content: center;/*РІ С†РµРЅС‚СЂРµ РїРѕ РіРѕСЂРёР·РѕРЅС‚Р°Р»Рё*/
+    align-items: center;/*РІ С†РµРЅС‚СЂРµ РїРѕ РІРµСЂС‚РёРєР°Р»Рё*/
+	color: #eeeeee;
+	text-align: center;
+}
+/* основной дизайн содержания страницы */
+/* Article Styles */
+.article {
+    margin: 50px 0;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.article h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.article h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #666;
+    font-weight: 400;
+}
+
+.article h3 {
+    font-size: 22px;
+    margin: 25px 0 15px;
+    color: #333;
+}
+
+.article p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.article ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.article ul li {
+    list-style-type: disc;
+    margin-bottom: 8px;
+}
+
+.article-image {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.article-image img {
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}

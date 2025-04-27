@@ -1,0 +1,174 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Arsenal';
+	font-size: 16px;
+    background-color: #eeeeee;
+    color: rgb(61, 59, 59)ee;
+    overflow-x: hidden;
+}
+
+h1{
+	padding: 0;
+	margin: 0;
+	font: 'Arsenal';
+	font-size: 64px;
+	font-weight: 100;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Arsenal', sans-serif; /* Важно добавить 'sans-serif' для fallback */
+    font-size: 32px;
+    text-align: center; /* Добавляем это для центрирования текста */
+  }
+
+h6 {
+	padding: 0;
+	margin: 0;
+	font: 'Montserrat';
+	font-size: 16px;
+	font-weight: 100;
+}
+
+p{
+	font: 'Montserrat';
+	font-size: 20px;
+	padding: 8px;
+	margin: 8px;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;  
+}
+
+.logo-image {
+    width: 120px; /* Размер логотипа */
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 80px;
+    margin-top: 48px;
+}
+
+.menu{
+	display: flex;
+	column-gap: 40px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+	column-gap: 40px;
+
+	font-size: 15px;
+	font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+    color: #222121;
+	font: 'Montserrat';
+	font-size: 20px;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+
+.footer {
+	display: flex;
+	margin-top: 96px;
+}
+
+.container__footer{
+	width: 100%;/*РЅР° РІСЃСЋ С€РёСЂРёРЅСѓ*/
+    padding: 20px 50px;/*РїРѕР»СЏ РґР»СЏ РєРѕРЅС‚РµРЅС‚Р°*/
+    background: #0f0f0f;/*С†РІРµС‚ С„СѓС‚РµСЂР°*/
+    display: flex;
+    justify-content: center;/*РІ С†РµРЅС‚СЂРµ РїРѕ РіРѕСЂРёР·РѕРЅС‚Р°Р»Рё*/
+    align-items: center;/*РІ С†РµРЅС‚СЂРµ РїРѕ РІРµСЂС‚РёРєР°Р»Рё*/
+	color: #eeeeee;
+	text-align: center;
+}
+/*стиль форм */
+.vxod{
+    min-height: 700px;
+	display: block;
+	margin-top: 200px;
+	text-align: center;
+}
+
+
+input[type=text]{
+	display: block;
+	width: 50%;
+	text-align: center;
+	background-color: #f3f3f3;
+	color: white;
+	padding: 16px 40px;
+	border: 1px solid #0f0f0f;
+	color: #0f0f0f;
+	font-size: 14px;
+	border-radius: 4px;
+	margin-left: auto;
+    margin-right: auto;
+	margin-top: 24px;
+  }
+
+  input[type=password]{
+	display: block;
+	width: 50%;
+	text-align: center;
+	background-color: #f3f3f3;
+	color: white;
+	padding: 16px 40px;
+	border: 1px solid #0f0f0f;
+	color: #0f0f0f;
+	font-size: 14px;
+	border-radius: 4px;
+	margin-left: auto;
+    margin-right: auto;
+	margin-top: 24px;
+  }
+
+  .button {
+	width: 30%;
+	text-align: center;
+	background-color: #f3f3f3;
+	color: white;
+	padding: 16px 40px;
+	border: 1px solid #0f0f0f;
+	font-size: 16px;
+	border-radius: 4px;
+	margin-bottom: 24px;
+	margin-left: auto;
+    margin-right: auto;
+	margin-top: 48px;
+	background-color: #0f0f0f;
+	color: #eeeeee;
+}
+
+.button:hover {
+	background-color: #eeeeee;
+	color: #0f0f0f;
+  }
+
+.button_registr{
+	text-decoration: none;
+	border: none;
+	font-size: 16px;
+	color: #494949;
+}
+
+.button_registr:hover{
+	color: #2618eb;
+}

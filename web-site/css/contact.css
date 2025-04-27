@@ -1,0 +1,156 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Arsenal';
+	font-size: 16px;
+    background-color: #eeeeee;
+    color: rgb(61, 59, 59)ee;
+    overflow-x: hidden;
+}
+
+h1{
+	padding: 0;
+	margin: 0;
+	font: 'Arsenal';
+	font-size: 64px;
+	font-weight: 100;
+}
+
+h2 {
+	padding: 0;
+	margin: 0;
+	font: 'Arsenal';
+	font-size: 32px;
+}
+
+h6 {
+	padding: 0;
+	margin: 0;
+	font: 'Montserrat';
+	font-size: 16px;
+	font-weight: 100;
+}
+
+p{
+	font: 'Montserrat';
+	font-size: 20px;
+	padding: 8px;
+	margin: 8px;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;  
+}
+
+.logo-image {
+    width: 120px; /* Размер логотипа */
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 80px;
+    margin-top: 48px;
+}
+
+.menu{
+	display: flex;
+	column-gap: 40px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+	column-gap: 40px;
+
+	font-size: 15px;
+	font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+    color: #222121;
+	font: 'Montserrat';
+	font-size: 20px;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+
+/*иконки*/
+.socials {
+    display: flex; /* Используем flex для иконок */
+    gap: 50px; /* Расстояние между иконками */
+    justify-content: center; /* Центрирование по горизонтали */
+}
+
+.social {
+    font-size: 30px;
+    color: #000000; /* Белый цвет для иконок */
+    text-decoration: none;
+    display: inline-block; /* Чтобы можно было задать margin */
+}
+
+.button {
+	padding: 8px 64px 8px 64px;
+	font-family: 'Montserrat';
+	font-size: 14px;
+	font-weight: 500;
+	color: #0f0f0f;
+	margin-top: 40px;
+}
+
+.button:hover {
+	background: #d8dfee;
+  }
+  
+  .button:focus {
+	outline: none;
+	box-shadow: 0 0 0 4px #cbd6ee;
+  }
+
+  .map{
+	margin: 72px 0px 24px 0px;
+  }
+
+  .block {
+	display: flex;
+	justify-content: space-between;
+} 
+
+.right{
+    float: right;
+    text-align: right;
+	width: 376px;
+}
+
+
+.card{
+	width: 560px;
+	border-radius: 16px;
+	border:1px solid black;
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+.footer {
+	display: flex;
+	margin-top: 96px;
+}
+
+.container__footer{
+	width: 100%;/*РЅР° РІСЃСЋ С€РёСЂРёРЅСѓ*/
+    padding: 20px 50px;/*РїРѕР»СЏ РґР»СЏ РєРѕРЅС‚РµРЅС‚Р°*/
+    background: #0f0f0f;/*С†РІРµС‚ С„СѓС‚РµСЂР°*/
+    display: flex;
+    justify-content: center;/*РІ С†РµРЅС‚СЂРµ РїРѕ РіРѕСЂРёР·РѕРЅС‚Р°Р»Рё*/
+    align-items: center;/*РІ С†РµРЅС‚СЂРµ РїРѕ РІРµСЂС‚РёРєР°Р»Рё*/
+	color: #eeeeee;
+	text-align: center;
+}

@@ -1,0 +1,265 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Arsenal';
+	font-size: 16px;
+    background-color: #eeeeee;
+    color: rgb(61, 59, 59)ee;
+    overflow-x: hidden;
+}
+
+h1{
+	padding: 0;
+	margin: 0;
+	font: 'Arsenal';
+	font-size: 64px;
+	font-weight: 100;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Arsenal', sans-serif; /* Важно добавить 'sans-serif' для fallback */
+    font-size: 32px;
+    text-align: center; /* Добавляем это для центрирования текста */
+  }
+
+h6 {
+	padding: 0;
+	margin: 0;
+	font: 'Montserrat';
+	font-size: 16px;
+	font-weight: 100;
+}
+
+p{
+	font: 'Montserrat';
+	font-size: 20px;
+	padding: 8px;
+	margin: 8px;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;  
+}
+
+.logo-image {
+    width: 120px; /* Размер логотипа */
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 80px;
+    margin-top: 48px;
+}
+
+.menu{
+	display: flex;
+	column-gap: 40px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+	column-gap: 40px;
+
+	font-size: 15px;
+	font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+    color: #222121;
+	font: 'Montserrat';
+	font-size: 20px;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+
+.footer {
+	display: flex;
+	margin-top: 96px;
+}
+
+.container__footer{
+	width: 100%;/*РЅР° РІСЃСЋ С€РёСЂРёРЅСѓ*/
+    padding: 20px 50px;/*РїРѕР»СЏ РґР»СЏ РєРѕРЅС‚РµРЅС‚Р°*/
+    background: #0f0f0f;/*С†РІРµС‚ С„СѓС‚РµСЂР°*/
+    display: flex;
+    justify-content: center;/*РІ С†РµРЅС‚СЂРµ РїРѕ РіРѕСЂРёР·РѕРЅС‚Р°Р»Рё*/
+    align-items: center;/*РІ С†РµРЅС‚СЂРµ РїРѕ РІРµСЂС‚РёРєР°Р»Рё*/
+	color: #eeeeee;
+	text-align: center;
+}
+
+/* Основные стили для карточек стилистов */
+.main {
+    padding: 40px 0;
+}
+
+.page-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+
+.filter-btn.active {
+    background: #0f0f0f;
+    color: white;
+    border-color: #0f0f0f;
+}
+
+.stylists-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.stylist-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.stylist-card:hover {
+    transform: translateY(-5px);
+}
+
+.stylist-photo {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.stylist-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rating {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.stylist-info {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.stylist-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.service-name {
+    font-weight: bold;
+    color: #0f0f0f;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.service-desc {
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.price-cart-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.service-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0f0f0f;
+}
+
+.service-form {
+    margin: 0;
+}
+
+.cart-btn {
+    padding: 10px 15px;
+    background: #0f0f0f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cart-btn:hover {
+    background: #333;
+}
+
+@media (max-width: 768px) {
+    .stylists-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .filters {
+        justify-content: flex-start;
+    }
+    
+    .price-cart-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .cart-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

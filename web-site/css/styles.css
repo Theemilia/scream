@@ -1,0 +1,403 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Arsenal';
+	font-size: 16px;
+    background-color: #eeeeee;
+    color: rgb(61, 59, 59)ee;
+    overflow-x: hidden;
+}
+
+h1{
+	padding: 0;
+	margin: 0;
+	font: 'Arsenal';
+	font-size: 64px;
+	font-weight: 100;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Arsenal', sans-serif; /* Важно добавить 'sans-serif' для fallback */
+    font-size: 32px;
+    text-align: center; /* Добавляем это для центрирования текста */
+  }
+
+h6 {
+	padding: 0;
+	margin: 0;
+	font: 'Montserrat';
+	font-size: 16px;
+	font-weight: 100;
+}
+
+p{
+	font: 'Montserrat';
+	font-size: 20px;
+	padding: 8px;
+	margin: 8px;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;  
+}
+
+.logo-image {
+    width: 120px; /* Размер логотипа */
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 80px;
+    margin-top: 48px;
+}
+
+.menu{
+	display: flex;
+	column-gap: 40px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+	column-gap: 40px;
+
+	font-size: 15px;
+	font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+    color: #222121;
+	font: 'Montserrat';
+	font-size: 20px;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+
+.footer {
+	display: flex;
+	margin-top: 96px;
+}
+
+.container__footer{
+	width: 100%;/*РЅР° РІСЃСЋ С€РёСЂРёРЅСѓ*/
+    padding: 20px 50px;/*РїРѕР»СЏ РґР»СЏ РєРѕРЅС‚РµРЅС‚Р°*/
+    background: #0f0f0f;/*С†РІРµС‚ С„СѓС‚РµСЂР°*/
+    display: flex;
+    justify-content: center;/*РІ С†РµРЅС‚СЂРµ РїРѕ РіРѕСЂРёР·РѕРЅС‚Р°Р»Рё*/
+    align-items: center;/*РІ С†РµРЅС‚СЂРµ РїРѕ РІРµСЂС‚РёРєР°Р»Рё*/
+	color: #eeeeee;
+	text-align: center;
+}
+
+/* Герой */
+.hero {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.hero-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #393636;
+}
+
+.hero-buttons {
+    /*  Центрируем кнопки */
+    display: flex;
+}
+
+.hero-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #000; /* Или #000000 */
+    color: #fff; /* Чтобы текст кнопки был белым */
+    border: none; /* Убираем стандартную рамку кнопки (опционально) */
+    cursor: pointer; /* Изменяем курсор при наведении (опционально) */
+    border-radius: 5px; /* Закругляем углы (опционально) */
+    transition: background-color 0.3s ease; /* Добавляем плавный переход (опционально) */
+}
+
+.hero-button:hover {
+    background-color: #333; /* Меняем цвет при наведении (опционально) */
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Актуальные тренды */
+.trends {
+    padding: 60px 0;
+}
+
+.trends-list {
+    display: flex;
+    justify-content: space-between; /* Равномерное распределение по ширине */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.trends-item {
+    width: 30%; /* Ширина каждого элемента */
+    text-align: center;
+}
+
+.trends-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.trends-text {
+    font-size: 16px;
+    color: #000000;
+}
+
+/* детали образов */
+.new-arrivals {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.new-arrivals-title {
+    margin-bottom: 50px;
+}
+
+.new-arrivals-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.new-arrivals-item {
+    width: calc(25% - 20px); /* Четыре элемента в ряд с отступом */
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden; /* Чтобы изображения и текст не выходили за рамки */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.new-arrivals-image {
+    width: 100%;
+    height: 300px; /* Фиксированная высота для изображений */
+    object-fit: cover; /* Чтобы изображения заполняли пространство и не искажались */
+}
+
+.new-arrivals-name {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px;
+    margin: 0;
+}
+
+.new-arrivals-price {
+    font-size: 16px;
+    color: #000;
+    padding: 0 15px 15px;
+    margin: 0;
+}
+
+/* О нас */
+.about {
+    padding: 60px 0;
+}
+
+.about-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-text {
+    max-width: 60%; /* Ширина текстового блока */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.about-image {
+    width: 35%; /* Ширина изображения */
+}
+
+.about-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Блог */
+.blog {
+    padding: 60px 0;
+}
+
+.blog-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.blog-item {
+    width: 30%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image {
+    width: 97%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.blog-title-item {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px;
+    margin: 0;
+}
+
+.blog-excerpt {
+    font-size: 16px;
+    color: #555;
+    padding: 0 15px 10px;
+    margin: 0;
+}
+
+.blog-link {
+    display: block; /* Чтобы можно было задать padding */
+    padding: 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Плавная смена цвета при наведении */
+}
+
+.blog-link:hover {
+    background-color: #ddd;
+}
+
+/* Подписка */
+.subscribe {
+    padding: 60px 0;
+    background-color: #f0f0f0;
+}
+
+.subscribe-wrapper {
+    text-align: center;
+}
+
+.subscribe-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+}
+
+.form-group {
+    display: flex;
+    width: 500px; /* Ширина формы */
+}
+
+.form-input {
+    width: 70%; /* Ширина поля ввода */
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+.form-button {
+    width: 30%; /* Ширина кнопки */
+    border-radius: 0 4px 4px 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+}
+ /* Стили для модальных окон */
+ .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: black;
+  }
+  
+  .success-message {
+    color: #4CAF50;
+    font-weight: bold;
+    margin-top: 20px;
+    display: none;
+  }
+
+
+
