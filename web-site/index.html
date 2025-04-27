@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>SCREAM</title>
+  <link rel="stylesheet" href="сss/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header class="header">
+      <div class="container">
+        <div class="nav">
+          <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="логотип" class="logo-image">
+          </a>
+          <ul class="menu">
+            <li><a href="yslygi.html">УСЛУГИ</a></li>
+            <li><a href="blog.html">БЛОГ</a></li>
+            <li><a href="contacts.html">КОНТАКТЫ</a></li>
+          </ul>
+          <ul class="icons">
+            <li><a href="profil.html" class="profile-link"> <i class="ri-user-fill"></i></a></li>
+            <li><a href="basket.html" class="cart-link"> <i class="fas fa-shopping-cart"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Модальное окно для подбора образа -->
+    <div id="imageSelectionModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Подбор Образа</h3>
+        <p>Данная функция находится в разработке. Скоро вы сможете подбирать идеальные образы с помощью нашего сервиса!</p>
+      </div>
+    </div>
+
+    <!-- Модальное окно для подписки -->
+    <div id="subscribeModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Спасибо за подписку!</h3>
+        <p>Теперь вы подписаны на нашу рассылку. Благодарим за интерес к нашему сайту!</p>
+      </div>
+    </div>
+
+    <main class="main">
+        <!-- Герой -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-wrapper">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            Новая коллекция <br>
+                            весна-лето 2025
+                        </h1>
+                        <p class="hero-description">
+                            Стиль, вдохновение, ваш образ. <br>
+                            Откройте мир моды вместе с нами.
+                        </p>
+                        <div class="hero-buttons">
+                            <button id="imageSelectionBtn" class="button hero-button">
+                                Подбор Образа
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="img/trend4.png" alt="Фото модели" class="hero-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / Герой -->
+
+        <!-- Актуальные тренды -->
+        <section class="trends">
+            <div class="container">
+                <h2 class="section-title trends-title">
+                    Актуальные тренды
+                </h2>
+                <br>
+                <br>
+                <ul class="trends-list">
+                    <li class="trends-item">
+                        <img src="img/trend1.png" alt="Трендовый образ 1" class="trends-image">
+                        <p class="trends-text">
+                            Минимализм в деталях
+                        </p>
+                    </li>
+                    <li class="trends-item">
+                        <img src="img/trend2.png" alt="Трендовый образ 2" class="trends-image">
+                        <p class="trends-text">
+                            Яркие акценты
+                        </p>
+                    </li>
+                    <li class="trends-item">
+                        <img src="img/trend3.png" alt="Трендовый образ 3" class="trends-image">
+                        <p class="trends-text">
+                            Экологичные материалы
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- / Актуальные тренды -->
+
+        <!-- Новые поступления -->
+        <section class="new-arrivals">
+            <div class="container">
+                <h2 class="section-title new-arrivals-title">
+                    Стильные детали образов
+                </h2>
+                <ul class="new-arrivals-list">
+                    <li class="new-arrivals-item">
+                        <img src="img/trend6.png" alt="Новинка 1" class="new-arrivals-image">
+                        <p class="new-arrivals-name">Платье "Элегантность"</p>
+                        <p class="new-arrivals-price">5999 руб.</p>
+                    </li>
+                    <li class="new-arrivals-item">
+                        <img src="img/trend7.png" alt="Новинка 2" class="new-arrivals-image">
+                        <p class="new-arrivals-name">Блузка "Шелк и шифон"</p>
+                        <p class="new-arrivals-price">3499 руб.</p>
+                    </li>
+                    <li class="new-arrivals-item">
+                        <img src="img/trend8.png" alt="Новинка 3" class="new-arrivals-image">
+                        <p class="new-arrivals-name">Юбка "Грация"</p>
+                        <p class="new-arrivals-price">4299 руб.</p>
+                    </li>
+                    <li class="new-arrivals-item">
+                        <img src="img/trend9.png" alt="Новинка 4" class="new-arrivals-image">
+                        <p class="new-arrivals-name">Пальто "Осенний ветер"</p>
+                        <p class="new-arrivals-price">9999 руб.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- / Новые поступления -->
+
+        <!-- О нас -->
+        <section class="about">
+            <div class="container">
+                <h2 class="section-title about-title">
+                    О нас
+                </h2>
+                <div class="about-wrapper">
+                    <div class="about-text">
+                        <p>
+                            Мы - команда увлеченных профессионалов, создающих моду, которая вдохновляет и подчеркивает вашу индивидуальность. Наша миссия - предлагать актуальные тренды, высокое качество и безупречный сервис.
+                        </p>
+                        <p>
+                            Мы работаем с лучшими дизайнерами и производителями, чтобы предложить вам только самое лучшее. Наш ассортимент постоянно обновляется, чтобы вы всегда были в тренде.
+                        </p>
+                        <p>
+                            Присоединяйтесь к нашему сообществу, чтобы быть в курсе всех новостей, акций и вдохновляющих образов!
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <img src="img/trend5.png" alt="Фото команды" class="about-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / О нас -->
+
+        <!-- Блог -->
+        <section class="blog">
+            <div class="container">
+                <h2 class="section-title blog-title">
+                    Статьи о моде
+                </h2>
+                <ul class="blog-list">
+                    <li class="blog-item">
+                        <img src="img/garderob.png" alt="Статья 1" class="blog-image">
+                        <h3 class="blog-title-item">Как выбрать идеальный гардероб</h3>
+                        <p class="blog-excerpt">Советы от стилиста по созданию базового гардероба.</p>
+                        <a href="1statia.html" class="blog-link">Читать далее</a>
+                    </li>
+                    <li class="blog-item">
+                        <img src="img/wether-summer.png" alt="Статья 2" class="blog-image">
+                        <h3 class="blog-title-item">Тренды весна-лето 2025</h3>
+                        <p class="blog-excerpt">Обзор самых актуальных тенденций сезона.</p>
+                        <a href="2statia.html" class="blog-link">Читать далее</a>
+                    </li>
+                    <li class="blog-item">
+                        <img src="img/somebody.png" alt="Статья 3" class="blog-image">
+                        <h3 class="blog-title-item">Стиль для разных типов фигуры</h3>
+                        <p class="blog-excerpt">Подбор одежды, которая подчеркнет ваши достоинства.</p>
+                        <a href="3statia.html" class="blog-link">Читать далее</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- / Блог -->
+
+         <!--  Подписка на рассылку -->
+        <section class="subscribe">
+            <div class="container">
+                <h2 class="section-title subscribe-title">
+                    Подпишитесь на рассылку
+                </h2>
+                 <div class="subscribe-wrapper">
+                     <p class="subscribe-text">
+                         Будьте в курсе всех новинок, акций и трендов!
+                     </p>
+                     <form id="subscribeForm" class="form subscribe-form">
+                         <div class="form-group">
+                             <input type="email" class="input form-input" name="email" placeholder="Ваш email" required>
+                             <button type="submit" class="button form-button">Подписаться</button>
+                         </div>
+                     </form>
+                 </div>
+            </div>
+        </section>
+        <!-- / Подписка на рассылку -->
+    </main>
+    <footer class="footer">
+        <div class="container__footer">
+          <h2><a   style="color:white">Мода и Стиль для всех<br><h6>для сотрудников</h6></a></h1>
+        </div>
+      </footer>
+
+<script>
+  // Обработка кнопки "Подбор Образа"
+  document.getElementById('imageSelectionBtn').addEventListener('click', function() {
+    document.getElementById('imageSelectionModal').style.display = 'block';
+  });
+
+  // Обработка формы подписки
+  document.getElementById('subscribeForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Здесь можно добавить AJAX-запрос для отправки email на сервер
+    // В данном примере просто показываем модальное окно
+    document.getElementById('subscribeModal').style.display = 'block';
+    
+    // Очищаем форму
+    this.reset();
+  });
+
+  // Закрытие модальных окон
+  const modals = document.querySelectorAll('.modal');
+  const closeButtons = document.querySelectorAll('.close');
+  
+  closeButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      this.closest('.modal').style.display = 'none';
+    });
+  });
+  
+  // Закрытие при клике вне модального окна
+  window.addEventListener('click', function(e) {
+    modals.forEach(modal => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  });
+</script>
+<script src="index.js"> </script>
+</body>
+</html>

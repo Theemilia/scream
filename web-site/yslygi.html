@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>SCREAM</title>
+  <link rel="stylesheet" href="сss/yslygi.css" />
+  <link rel="stylesheet" href="сss/yvedomlenia.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+      <div class="container">
+        <div class="nav">
+          <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="логотип" class="logo-image">
+          </a>
+          <ul class="menu">
+            <li><a href="yslygi.html">УСЛУГИ</a></li>
+            <li><a href="blog.html">БЛОГ</a></li>
+            <li><a href="contacts.html">КОНТАКТЫ</a></li>
+          </ul>
+          <ul class="icons">
+            <li><a href="profil.html" class="profile-link"> <i class="ri-user-fill"></i></a></li>
+            <li><a href="basket.html" class="cart-link"> <i class="fas fa-shopping-cart"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+<main class="main">
+    <div class="container">
+        <h1 class="page-title">Наши стилисты и услуги</h1>
+        
+        <!-- Фильтры по категориям -->
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">Все услуги</button>
+            <button class="filter-btn" data-category="wardrobe">Подбор гардероба</button>
+            <button class="filter-btn" data-category="color">Определение цветотипа</button>
+            <button class="filter-btn" data-category="capsule">Капсульный гардероб</button>
+            <button class="filter-btn" data-category="event">Образ для мероприятия</button>
+            <button class="filter-btn" data-category="personal">Персональный стиль</button>
+        </div>
+        
+        <!-- Карточки стилистов -->
+        <div class="stylists-grid">
+            <!-- Карточка 1 -->
+            <div class="stylist-card" data-categories="wardrobe capsule">
+                <div class="stylist-photo">
+                    <img src="img/1.png" alt="Анна Смирнова">
+                    <div class="rating">4.8 ★</div>
+                </div>
+                <div class="stylist-info">
+                    <h3>Анна Смирнова</h3>
+                    <p class="service-name">Подбор гардероба (шоппинг-сопровождение)</p>
+                    <p class="service-desc">Профессиональный подбор одежды с учетом ваших предпочтений, типа фигуры и образа жизни. Возможен как личный шоппинг, так и онлайн-консультация.</p>
+                    <div class="price-cart-container">
+                        <span class="service-price">5 000 ₽</span>
+                        <form action="add_to_cart.php" method="post" class="service-form">
+                            <input type="hidden" name="service_id" value="1">
+                            <input type="hidden" name="stylist_id" value="101">
+                            <input type="hidden" name="price" value="5000">
+                            <button type="submit" name="add_to_cart" class="cart-btn">
+                                <i class="fas fa-shopping-cart"></i> В корзину
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Карточка 2 -->
+            <div class="stylist-card" data-categories="color">
+                <div class="stylist-photo">
+                    <img src="img/2.png" alt="Ирина Волкова">
+                    <div class="rating">4.9 ★</div>
+                </div>
+                <div class="stylist-info">
+                    <h3>Ирина Волкова</h3>
+                    <p class="service-name">Определение цветотипа</p>
+                    <p class="service-desc">Анализ вашего цветотипа по временам года, подбор идеальных оттенков для одежды, макияжа и аксессуаров, которые подчеркнут вашу природную красоту.</p>
+                    <div class="price-cart-container">
+                        <span class="service-price">3 500 ₽</span>
+                        <form action="add_to_cart.php" method="post" class="service-form">
+                            <input type="hidden" name="service_id" value="2">
+                            <input type="hidden" name="stylist_id" value="102">
+                            <input type="hidden" name="price" value="3500">
+                            <button type="submit" name="add_to_cart" class="cart-btn">
+                                <i class="fas fa-shopping-cart"></i> В корзину
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Карточка 3 -->
+            <div class="stylist-card" data-categories="capsule wardrobe">
+                <div class="stylist-photo">
+                    <img src="img/3.png" alt="Екатерина Козлова">
+                    <div class="rating">4.7 ★</div>
+                </div>
+                <div class="stylist-info">
+                    <h3>Екатерина Козлова</h3>
+                    <p class="service-name">Создание капсульного гардероба</p>
+                    <p class="service-desc">Разработка универсального гардероба из минимального количества вещей, которые идеально сочетаются между собой и подходят для разных ситуаций.</p>
+                    <div class="price-cart-container">
+                        <span class="service-price">6 000 ₽</span>
+                        <form action="add_to_cart.php" method="post" class="service-form">
+                            <input type="hidden" name="service_id" value="3">
+                            <input type="hidden" name="stylist_id" value="103">
+                            <input type="hidden" name="price" value="6000">
+                            <button type="submit" name="add_to_cart" class="cart-btn">
+                                <i class="fas fa-shopping-cart"></i> В корзину
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Карточка 4 -->
+            <div class="stylist-card" data-categories="event">
+                <div class="stylist-photo">
+                    <img src="img/4.png" alt="Ольга Новикова">
+                    <div class="rating">4.8 ★</div>
+                </div>
+                <div class="stylist-info">
+                    <h3>Ольга Новикова</h3>
+                    <p class="service-name">Образ для мероприятия</p>
+                    <p class="service-desc">Создание идеального образа для важного события: свадьбы, делового ужина, выпускного или фотосессии с учетом дресс-кода и ваших предпочтений.</p>
+                    <div class="price-cart-container">
+                        <span class="service-price">4 500 ₽</span>
+                        <form action="add_to_cart.php" method="post" class="service-form">
+                            <input type="hidden" name="service_id" value="4">
+                            <input type="hidden" name="stylist_id" value="104">
+                            <input type="hidden" name="price" value="4500">
+                            <button type="submit" name="add_to_cart" class="cart-btn">
+                                <i class="fas fa-shopping-cart"></i> В корзину
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Карточка 5 -->
+            <div class="stylist-card" data-categories="personal">
+                <div class="stylist-photo">
+                    <img src="img/5.png" alt="Мария Иванова">
+                    <div class="rating">5.0 ★</div>
+                </div>
+                <div class="stylist-info">
+                    <h3>Мария Иванова</h3>
+                    <p class="service-name">Персональный стиль</p>
+                    <p class="service-desc">Комплексный анализ вашего стиля, создание индивидуальной концепции образа, рекомендации по покупкам и сочетанию вещей для вашего уникального стиля.</p>
+                    <div class="price-cart-container">
+                        <span class="service-price">7 000 ₽</span>
+                        <form action="add_to_cart.php" method="post" class="service-form">
+                            <input type="hidden" name="service_id" value="5">
+                            <input type="hidden" name="stylist_id" value="105">
+                            <input type="hidden" name="price" value="7000">
+                            <button type="submit" name="add_to_cart" class="cart-btn">
+                                <i class="fas fa-shopping-cart"></i> В корзину
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка 6 - Подбор гардероба -->
+<div class="stylist-card" data-categories="wardrobe">
+    <div class="stylist-photo">
+        <img src="img/6.png" alt="Александра Петрова">
+        <div class="rating">4.6 ★</div>
+    </div>
+    <div class="stylist-info">
+        <h3>Александра Петрова</h3>
+        <p class="service-name">Полный разбор гардероба</p>
+        <p class="service-desc">Анализ вашего текущего гардероба, выявление "работающих" вещей, составление списка необходимых покупок для создания гармоничного образа.</p>
+        <div class="price-cart-container">
+            <span class="service-price">4 200 ₽</span>
+            <form action="add_to_cart.php" method="post" class="service-form">
+                <input type="hidden" name="service_id" value="6">
+                <input type="hidden" name="stylist_id" value="106">
+                <input type="hidden" name="price" value="4200">
+                <button type="submit" name="add_to_cart" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i> В корзину
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Карточка 7 - Подбор гардероба -->
+<div class="stylist-card" data-categories="wardrobe">
+    <div class="stylist-photo">
+        <img src="img/7.png" alt="Дарья Соколова">
+        <div class="rating">4.9 ★</div>
+    </div>
+    <div class="stylist-info">
+        <h3>Дарья Соколова</h3>
+        <p class="service-name">Сезонный подбор гардероба</p>
+        <p class="service-desc">Создание сезонного гардероба с учетом вашего бюджета, образа жизни и климатических особенностей вашего региона.</p>
+        <div class="price-cart-container">
+            <span class="service-price">5 500 ₽</span>
+            <form action="add_to_cart.php" method="post" class="service-form">
+                <input type="hidden" name="service_id" value="7">
+                <input type="hidden" name="stylist_id" value="107">
+                <input type="hidden" name="price" value="5500">
+                <button type="submit" name="add_to_cart" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i> В корзину
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Карточка 8 - Определение цветотипа -->
+<div class="stylist-card" data-categories="color">
+    <div class="stylist-photo">
+        <img src="img/8.png" alt="Елена Белова">
+        <div class="rating">4.8 ★</div>
+    </div>
+    <div class="stylist-info">
+        <h3>Елена Белова</h3>
+        <p class="service-name">Расширенный анализ цветотипа</p>
+        <p class="service-desc">Подробный анализ вашего цветотипа с созданием индивидуальной палитры, включая рекомендации по сочетанию цветов в одежде и аксессуарах.</p>
+        <div class="price-cart-container">
+            <span class="service-price">4 000 ₽</span>
+            <form action="add_to_cart.php" method="post" class="service-form">
+                <input type="hidden" name="service_id" value="8">
+                <input type="hidden" name="stylist_id" value="108">
+                <input type="hidden" name="price" value="4000">
+                <button type="submit" name="add_to_cart" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i> В корзину
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Карточка 9 - Определение цветотипа -->
+<div class="stylist-card" data-categories="color">
+    <div class="stylist-photo">
+        <img src="img/9.png" alt="Анастасия Кузнецова">
+        <div class="rating">4.7 ★</div>
+    </div>
+    <div class="stylist-info">
+        <h3>Анастасия Кузнецова</h3>
+        <p class="service-name">Цветовой анализ + макияж</p>
+        <p class="service-desc">Определение цветотипа с дополнительными рекомендациями по подбору косметики и созданию макияжа, подчеркивающего ваши лучшие черты.</p>
+        <div class="price-cart-container">
+            <span class="service-price">4 800 ₽</span>
+            <form action="add_to_cart.php" method="post" class="service-form">
+                <input type="hidden" name="service_id" value="9">
+                <input type="hidden" name="stylist_id" value="109">
+                <input type="hidden" name="price" value="4800">
+                <button type="submit" name="add_to_cart" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i> В корзину
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Карточка 10 - Капсульный гардероб -->
+<div class="stylist-card" data-categories="capsule">
+    <div class="stylist-photo">
+        <img src="img/10.png" alt="Виктория Морозова">
+        <div class="rating">4.9 ★</div>
+    </div>
+    <div class="stylist-info">
+        <h3>Виктория Морозова</h3>
+        <p class="service-name">Минималистичный капсульный гардероб</p>
+        <p class="service-desc">Создание ультра-функционального гардероба из 30-40 предметов, которые можно комбинировать между собой для любого случая.</p>
+        <div class="price-cart-container">
+            <span class="service-price">6 500 ₽</span>
+            <form action="add_to_cart.php" method="post" class="service-form">
+                <input type="hidden" name="service_id" value="10">
+                <input type="hidden" name="stylist_id" value="110">
+                <input type="hidden" name="price" value="6500">
+                <button type="submit" name="add_to_cart" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i> В корзину
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Карточка 11 - Капсульный гардероб -->
+<div class="stylist-card" data-categories="capsule">
+    <div class="stylist-photo">
+        <img src="img/11.png" alt="Юлия Васнецова">
+        <div class="rating">4.8 ★</div>
+    </div>
+    <div class="stylist-info">
+        <h3>Юлия Васнецова</h3>
+        <p class="service-name">Бизнес-капсула</p>
+        <p class="service-desc">Создание профессионального гардероба для деловой женщины с учетом корпоративного дресс-кода и вашей должности.</p>
+        <div class="price-cart-container">
+            <span class="service-price">7 200 ₽</span>
+            <form action="add_to_cart.php" method="post" class="service-form">
+                <input type="hidden" name="service_id" value="11">
+                <input type="hidden" name="stylist_id" value="111">
+                <input type="hidden" name="price" value="7200">
+                <button type="submit" name="add_to_cart" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i> В корзину
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Карточка 12 - Образ для мероприятия -->
+<div class="stylist-card" data-categories="event">
+    <div class="stylist-photo">
+        <img src="img/12.png" alt="Алиса Крылова">
+        <div class="rating">4.9 ★</div>
+    </div>
+    <div class="stylist-info">
+        <h3>Алиса Крылова</h3>
+        <p class="service-name">Свадебный образ</p>
+        <p class="service-desc">Создание идеального свадебного образа для невесты, включая подбор платья, аксессуаров, обуви и прически с учетом вашей фигуры и предпочтений.</p>
+        <div class="price-cart-container">
+            <span class="service-price">5 500 ₽</span>
+            <form action="add_to_cart.php" method="post" class="service-form">
+                <input type="hidden" name="service_id" value="12">
+                <input type="hidden" name="stylist_id" value="112">
+                <input type="hidden" name="price" value="5500">
+                <button type="submit" name="add_to_cart" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i> В корзину
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Карточка 13 - Образ для мероприятия -->
+<div class="stylist-card" data-categories="event">
+    <div class="stylist-photo">
+        <img src="img/13.png" alt="Полина Орлова">
+        <div class="rating">4.7 ★</div>
+    </div>
+    <div class="stylist-info">
+        <h3>Полина Орлова</h3>
+        <p class="service-name">Деловой образ для важного мероприятия</p>
+        <p class="service-desc">Создание уверенного и стильного образа для важных деловых встреч, презентаций или собеседований, который произведет нужное впечатление.</p>
+        <div class="price-cart-container">
+            <span class="service-price">4 800 ₽</span>
+            <form action="add_to_cart.php" method="post" class="service-form">
+                <input type="hidden" name="service_id" value="13">
+                <input type="hidden" name="stylist_id" value="113">
+                <input type="hidden" name="price" value="4800">
+                <button type="submit" name="add_to_cart" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i> В корзину
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Карточка 14 - Персональный стиль -->
+<div class="stylist-card" data-categories="personal">
+    <div class="stylist-photo">
+        <img src="img/14.png" alt="София Жукова">
+        <div class="rating">5.0 ★</div>
+    </div>
+    <div class="stylist-info">
+        <h3>София Жукова</h3>
+        <p class="service-name">Индивидуальный стиль "под ключ"</p>
+        <p class="service-desc">Полное сопровождение по созданию вашего уникального стиля: от анализа внешности и предпочтений до шоппинг-листа и рекомендаций по уходу.</p>
+        <div class="price-cart-container">
+            <span class="service-price">8 500 ₽</span>
+            <form action="add_to_cart.php" method="post" class="service-form">
+                <input type="hidden" name="service_id" value="14">
+                <input type="hidden" name="stylist_id" value="114">
+                <input type="hidden" name="price" value="8500">
+                <button type="submit" name="add_to_cart" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i> В корзину
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Карточка 15 - Персональный стиль -->
+<div class="stylist-card" data-categories="personal">
+    <div class="stylist-photo">
+        <img src="img/15.png" alt="Валерия Семенова">
+        <div class="rating">4.9 ★</div>
+    </div>
+    <div class="stylist-info">
+        <h3>Валерия Семенова</h3>
+        <p class="service-name">Стиль для нового этапа жизни</p>
+        <p class="service-desc">Помощь в переосмыслении стиля при смене работы, статуса или образа жизни, чтобы ваш внешний вид соответствовал новому "я".</p>
+        <div class="price-cart-container">
+            <span class="service-price">7 800 ₽</span>
+            <form action="add_to_cart.php" method="post" class="service-form">
+                <input type="hidden" name="service_id" value="15">
+                <input type="hidden" name="stylist_id" value="115">
+                <input type="hidden" name="price" value="7800">
+                <button type="submit" name="add_to_cart" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i> В корзину
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+        </div>
+
+        
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container__footer">
+      <h2><a   style="color:white">Мода и Стиль для всех<br><h6>для сотрудников</h6></a></h1>
+    </div>
+  </footer>
+
+<script>
+    // Фильтрация карточек
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const stylistCards = document.querySelectorAll('.stylist-card');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Удаляем активный класс у всех кнопок
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Добавляем активный класс текущей кнопке
+                this.classList.add('active');
+                
+                const category = this.dataset.category;
+                
+                stylistCards.forEach(card => {
+                    if (category === 'all' || card.dataset.categories.includes(category)) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    });
+</script>
+<script src="index.js"> </script>
+</body>
+</html>

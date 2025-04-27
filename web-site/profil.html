@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>SCREAM - Профиль</title>
+  <link rel="stylesheet" href="сss/basket.css" />
+  <link rel="stylesheet" href="сss/yvedomlenia.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="nav">
+        <a href="index.html" class="logo">
+          <img src="img/logo.png" alt="логотип" class="logo-image">
+        </a>
+        <ul class="menu">
+          <li><a href="yslygi.html">УСЛУГИ</a></li>
+          <li><a href="blog.html">БЛОГ</a></li>
+          <li><a href="contacts.html">КОНТАКТЫ</a></li>
+        </ul>
+        <ul class="icons">
+          <li><a href="profil.html" class="profile-link"> <i class="ri-user-fill"></i></a></li>
+          <li><a href="basket.html" class="cart-link"> <i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+        <button class="logout-btn">Выйти</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <h1>Мой профиль</h1>
+      <div class="profile-info">
+        <h2 id="username">Пользователь</h2>
+        <div class="contact-info">
+          <p><strong>Email:</strong> <span id="user-email">Не указан</span></p>
+          <p><strong>Телефон:</strong> <span id="user-phone">Не указан</span></p>
+        </div>
+      </div>
+      
+      <div class="orders-section">
+        <h2>Мои заказы</h2>
+        <div class="orders-list" id="orders-list">
+          <!-- Заказы будут добавлены сюда через JavaScript -->
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container__footer">
+      <h2><a   style="color:white">Мода и Стиль для всех<br><h6>для сотрудников</h6></a></h1>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Получаем данные пользователя из localStorage
+      const user = JSON.parse(localStorage.getItem('user')) || {};
+      const orders = JSON.parse(localStorage.getItem('orders')) || [];
+      
+      // Отображаем информацию пользователя
+      document.getElementById('username').textContent = user.name || 'Пользователь';
+      document.getElementById('user-email').textContent = user.email || 'Не указан';
+      document.getElementById('user-phone').textContent = user.phone || 'Не указан';
+      
+      // Отображаем заказы
+      const ordersList = document.getElementById('orders-list');
+      
+      if (orders.length === 0) {
+        ordersList.innerHTML = '<p>У вас пока нет заказов</p>';
+      } else {
+        let ordersHTML = '';
+        
+        orders.forEach((order, index) => {
+          let orderHTML = `
+            <div class="order-card">
+              <div class="order-header">
+                <h3>Заказ #${index + 1}</h3>
+                <span class="order-date">${order.date || 'Дата не указана'}</span>
+                <span class="order-status">${order.status || 'Статус не указан'}</span>
+              </div>
+              <div class="order-items">
+          `;
+          
+          order.items.forEach(item => {
+            orderHTML += `
+              <div class="order-item">
+                <img src="${item.serviceImage}" alt="${item.serviceName}" class="order-item-image">
+                <div class="order-item-details">
+                  <h4>${item.serviceName}</h4>
+                  <p>Стилист: ${item.stylistName}</p>
+                  <p>${item.price} ₽ × ${item.quantity} = ${item.price * item.quantity} ₽</p>
+                </div>
+              </div>
+            `;
+          });
+          
+          orderHTML += `
+              </div>
+              <div class="order-footer">
+                <div class="order-total">Итого: ${order.total} ₽</div>
+                <div class="order-contact">
+                  <p>Контактные данные:</p>
+                  <p>Телефон: ${order.phone || 'Не указан'}</p>
+                  <p>Email: ${order.email || 'Не указан'}</p>
+                </div>
+              </div>
+            </div>
+          `;
+          
+          ordersHTML += orderHTML;
+        });
+        
+        ordersList.innerHTML = ordersHTML;
+      }
+    });
+  </script>
+
+  <style>
+    /* Дополнительные стили для страницы профиля */
+    .profile-info {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      margin-bottom: 40px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    
+    .contact-info {
+      margin-top: 20px;
+    }
+    
+    .contact-info p {
+      margin: 10px 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+    .orders-section {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    
+    .order-card {
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .order-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .order-date {
+      color: #666;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+    }
+    
+    .order-status {
+      background: #f0f0f0;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+    }
+    
+    .order-item {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #f5f5f5;
+    }
+    
+    .order-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    
+    .order-item-image {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    
+    .order-item-details {
+      flex: 1;
+    }
+    
+    .order-item-details h4 {
+      margin: 0 0 5px 0;
+      font-family: 'Arsenal', sans-serif;
+      font-size: 16px;
+    }
+    
+    .order-item-details p {
+      margin: 5px 0;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      color: #666;
+    }
+    
+    .order-footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+    }
+    
+    .order-total {
+      font-family: 'Arsenal', sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    
+    .order-contact {
+      text-align: right;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+    }
+    
+    .order-contact p {
+      margin: 5px 0;
+    }
+  </style>
+  <script src="index.js"> </script>
+
+</body>
+</html>
